@@ -1,0 +1,17 @@
+﻿<Window x:Class="Antivirus.AddMD5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Antivirus"
+        mc:Ignorable="d"
+        Title="Add exclusion" Height="187.059" Width="300">
+    <StackPanel Margin="0,0,0,0">
+        <Label x:Name="label" HorizontalContentAlignment="Center" Content="Choose file" Margin="10,10"/>
+        <Grid>
+            <TextBox x:Name="textBox" Height="23" TextWrapping="Wrap" Margin="10,19,24,19"/>
+            <Button x:Name="buttonChoose" Content="..." Margin="0,19,10,0" VerticalAlignment="Top" Click="buttonChoose_Click" Height="23" HorizontalAlignment="Right" Width="40"/>
+        </Grid>
+        <Button x:Name="buttonAdd" Content="Add file checksum" Margin="10,10" Padding="10" Click="buttonAdd_Click"/>
+    </StackPanel>
+</Window>

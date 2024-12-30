@@ -1,0 +1,21 @@
+﻿<Window x:Class="Antivirus.HashDetected"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Antivirus"
+        mc:Ignorable="d"
+        Title="Hazard discovered!" Height="391.833" Width="324.5">
+    <StackPanel>
+        <Label x:Name="label" Content="Checksum mismatch discovered:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="296"/>
+        <ScrollViewer Margin="15,10,10,0" Height="120" VerticalAlignment="Top">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="auto" Width="auto"/>
+        </ScrollViewer>
+        <Label x:Name="label_Copy" Content="Choose action:" HorizontalAlignment="Center" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonKill" Content="Delete file and stop associated processes" Background="IndianRed" Margin="10,10,10,0" VerticalAlignment="Top" Click="buttonKill_Click"/>
+        <Button x:Name="buttonTrust" Content="Add file to exclusions" Margin="10,10,10,0" Background="green" VerticalAlignment="Top" Click="buttonTrust_Click"/>
+        <Button x:Name="buttonSkip" Content="Skip file" Margin="10,10,10,0" VerticalAlignment="Top" Click="buttonSkip_Click"/>
+        <Button x:Name="buttonUpdate" Content="Update file's checksum" Margin="10,10,10,0" Background="Aqua" VerticalAlignment="Top" Click="buttonUpdate_Click"/>
+        <Button x:Name="buttonAbort" Content="Abort scanning" Margin="10,10,10,0" VerticalAlignment="Top" Background="Red" Click="buttonAbort_Click"/>
+    </StackPanel>
+</Window>

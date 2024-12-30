@@ -1,0 +1,21 @@
+﻿<Window x:Class="Antivirus.VirusDetected"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Antivirus"
+        mc:Ignorable="d"
+        Title="Hazard detected!" Height="375.833" Width="324.5">
+    <StackPanel>
+        <Label x:Name="label" Content="Following hazard was detected:" HorizontalContentAlignment="Center" Margin="10,10,10,0" VerticalAlignment="Top"/>
+        <ScrollViewer Margin="10,10,10,0" Height="100" VerticalAlignment="Top">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="auto" Width="auto"/>
+        </ScrollViewer>
+        <Label x:Name="label_Copy" Content="Choose action:" Margin="103,10,93,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonKill" Content="Stop process" Margin="10,10,10,0" VerticalAlignment="Top" Background="Yellow" Click="buttonKill_Click"/>
+        <Button x:Name="buttonDelete" Content="Stop process and delete associated file" Margin="10,10,10,0" Background="OrangeRed" VerticalAlignment="Top" Click="buttonDelete_Click"/>
+        <Button x:Name="buttonSkip" Content="Skip" Margin="10,10,10,0" VerticalAlignment="Top" Click="buttonSkip_Click"/>
+        <Button x:Name="buttonTrust" Content="Add process to exclusions" Margin="10,10,10,0" Background="green" Foreground="White" VerticalAlignment="Top" Click="buttonTrust_Click"/>
+        <Button x:Name="buttonAbort" Content="Abort scanning" Margin="10,10,10,0" VerticalAlignment="Top" Background="Red" Click="buttonAbort_Click"/>
+    </StackPanel>
+</Window>
